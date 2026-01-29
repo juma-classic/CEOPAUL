@@ -1,5 +1,5 @@
 import React from 'react';
-import { AutotradesLoader } from '@/components/loader/AutotradesLoader';
+import { PaulFXLoader } from '@/components/loader/PaulFXLoader';
 import { generateDerivApiInstance } from '@/external/bot-skeleton/services/api/appId';
 import { URLUtils } from '@deriv-com/utils';
 import App from './App';
@@ -61,7 +61,7 @@ export const AuthWrapper = () => {
     }, [loginInfo, paramsToDelete]);
 
     if (!isAuthComplete) {
-        return <AutotradesLoader onLoadComplete={() => {}} duration={2000} />;
+        return <PaulFXLoader onLoadComplete={() => {}} duration={2000} />;
     }
 
     return <App />;

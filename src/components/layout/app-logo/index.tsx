@@ -8,12 +8,12 @@ export const AppLogo = () => {
     if (!isDesktop) return null;
     return (
         <a
-            href='https://www.autotrades.site/'
+            href='https://www.paulfx.site/'
             target='_blank'
             rel='noopener noreferrer'
-            className='app-header__logo autotrades-logo'
+            className='app-header__logo paulfx-logo'
         >
-            <span className='autotrades-text'>AUTOTRADES</span>
+            <span className='paulfx-text'>PAUL FX</span>
         </a>
     );
 };

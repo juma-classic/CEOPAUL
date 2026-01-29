@@ -158,7 +158,7 @@ const DTraderManual: React.FC = () => {
             <header className="dtrader-header">
                 <div className="header-left">
                     <div className="logo">
-                        <span className="logo-text">Autotrades</span>
+                        <span className="logo-text">PAUL FX</span>
                     </div>
                 </div>
                 <div className="header-right">

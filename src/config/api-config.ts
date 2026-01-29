@@ -1,5 +1,5 @@
 /**
- * Centralized API Configuration for Autotrades
+ * Centralized API Configuration for PAUL FX
  * 
  * This file manages all Deriv API credentials and endpoints.
  * Update these values with your own app_id from https://api.deriv.com/app-registration

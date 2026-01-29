@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './AutotradesLoader.scss';
+import './PaulFXLoader.scss';
 
-interface AutotradesLoaderProps {
+interface PaulFXLoaderProps {
     onLoadComplete?: () => void;
     duration?: number;
 }
 
-export const AutotradesLoader: React.FC<AutotradesLoaderProps> = ({ 
+export const PaulFXLoader: React.FC<PaulFXLoaderProps> = ({ 
     onLoadComplete, 
     duration = 4000 
 }) => {
@@ -159,7 +159,7 @@ export const AutotradesLoader: React.FC<AutotradesLoaderProps> = ({
     }, [duration, onLoadComplete, statuses.length]);
 
     return (
-        <div className={`autotrades-loader ${isComplete ? 'fade-out' : ''}`}>
+        <div className={`paulfx-loader ${isComplete ? 'fade-out' : ''}`}>
             <canvas ref={particlesRef} className="particles-canvas" />
             
             <div className="loader-content">
@@ -171,11 +171,11 @@ export const AutotradesLoader: React.FC<AutotradesLoaderProps> = ({
                             <div className="icon-arrow"></div>
                         </div>
                         <h1 className="logo-text">
-                            <span className="auto">AUTO</span>
-                            <span className="trades">TRADES</span>
+                            <span className="paul">PAUL</span>
+                            <span className="fx">FX</span>
                         </h1>
                     </div>
-                    <p className="tagline">Automated Trading Platform</p>
+                    <p className="tagline">Advanced Trading Platform</p>
                 </div>
 
                 {/* Modern Progress Ring */}
@@ -222,4 +222,4 @@ export const AutotradesLoader: React.FC<AutotradesLoaderProps> = ({
     );
 };
 
-export default AutotradesLoader;
+export default PaulFXLoader;
